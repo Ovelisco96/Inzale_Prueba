@@ -1,0 +1,53 @@
+.header_container {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 2fr;
+  align-items: center;
+  padding: 3rem 6rem;
+
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &_input {
+      position: relative;
+      display: inline-block;
+      input {
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        width: 75%;
+        -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.31);
+        -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.31);
+        box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.31);
+      }
+      img {
+        position: absolute;
+        left: 20px; /* Ajusta la posición del icono a la derecha del input */
+        top: 50%; /* Coloca el icono en el centro verticalmente */
+        transform: translateY(-50%); /* Alinea el icono verticalmente */
+        font-size: 16px; /* Tamaño del icono (ajusta según tus necesidades) */
+        cursor: pointer;
+      }
+    }
+    .icon {
+      img {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      padding-top: 1rem;
+      li {
+        font-weight: 300;
+        font-size: 18px;
+        color: hsl(35, 15%, 35%);
+        cursor: pointer;
+      }
+    }
+  }
+}

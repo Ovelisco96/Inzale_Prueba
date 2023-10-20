@@ -1,0 +1,62 @@
+.container_hero_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hero_two_forma {
+    position: absolute;
+    width: 70%;
+    height: 800px;
+    margin-bottom: 5rem;
+    background-color: rgb(68, 86, 80);
+    clip-path: polygon(0 23%, 100% 10%, 100% 100%, 0% 100%);
+    border-radius: 0% 0% 90px 90px;
+  }
+  .hero_two_items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 5rem;
+    width: 70%;
+    bottom: 10px;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 8px;
+        gap: 10px;
+      }
+      h2 {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 15px;
+        color: white;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        color: rgb(159, 158, 158);
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 140px;
+    }
+  }
+}
+
+img#circulo {
+  width: 150px; /*ancho de la imagen*/
+  height: 150px; /*alto de la imagen*/
+  float: left;
+  shape-outside: circle(50%);
+  margin-right: 10px;
+}
