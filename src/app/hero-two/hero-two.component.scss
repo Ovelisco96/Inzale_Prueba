@@ -53,10 +53,28 @@
   }
 }
 
-img#circulo {
-  width: 150px; /*ancho de la imagen*/
-  height: 150px; /*alto de la imagen*/
-  float: left;
-  shape-outside: circle(50%);
-  margin-right: 10px;
+.contenedor {
+  position: relative;
+  width: 300px; /* Cambia el tamaño del contenedor según tus necesidades */
+}
+
+.imagen-circular {
+  width: 100%;
+  text-align: center;
+}
+
+.imagen-circular img {
+  border-radius: 50%;
+}
+
+.texto-circular {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; /* Cambia el tamaño del área del texto según tus necesidades */
+  text-align: center;
+  border: 2px solid black; /* Agrega un borde al texto */
+  padding: 10px;
+  border-radius: 50%;
 }
