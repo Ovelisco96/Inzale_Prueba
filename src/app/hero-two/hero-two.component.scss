@@ -18,7 +18,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
-    margin: 5rem;
+    margin: 16rem;
     width: 70%;
     bottom: 10px;
     .item {
@@ -53,28 +53,57 @@
   }
 }
 
-.contenedor {
-  position: relative;
-  width: 300px; /* Cambia el tamaño del contenedor según tus necesidades */
-}
-
-.imagen-circular {
-  width: 100%;
-  text-align: center;
-}
-
-.imagen-circular img {
-  border-radius: 50%;
-}
-
-.texto-circular {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%; /* Cambia el tamaño del área del texto según tus necesidades */
-  text-align: center;
-  border: 2px solid black; /* Agrega un borde al texto */
-  padding: 10px;
-  border-radius: 50%;
+.container_hero_three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hero_three_forma {
+    position: absolute;
+    width: 70%;
+    height: 800px;
+    margin-bottom: 20rem;
+    background-color: rgb(75, 55, 69);
+    clip-path: polygon(0 28%, 100% 41%, 100% 100%, 0% 100%);
+    border-radius: 0% 0% 90px 90px;
+  }
+  .hero_three_items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 5rem;
+    width: 70%;
+    bottom: 10px;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 8px;
+        gap: 10px;
+      }
+      h2 {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 15px;
+        color: white;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        color: rgb(159, 158, 158);
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 140px;
+    }
+  }
 }
